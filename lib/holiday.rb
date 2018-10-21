@@ -89,7 +89,7 @@ def all_holidays_with_bbq(holiday_hash)
   temp = []
   holiday_hash.each do |seasons, events|
       events.each do |list, items|
-        temp.push(list) #gives desired format but only in winter
+        temp.push(events) #gives desired format but only in winter
       end
       return temp
   end
