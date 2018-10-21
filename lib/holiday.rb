@@ -88,9 +88,11 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   temp = []
   holiday_hash.each do |seasons, events|
-      events.each do |list, items|
-        temp.push(events) #gives desired format but only in winter
+    if events.each do |list, items|
+      items == "BBQ"
+      temp.push(list)
       end
+    end
       return temp
   end
   
