@@ -88,8 +88,9 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   temp = []
   holiday_hash.each do |seasons, events|
-    
-    temp.push(events)
+    events.each do |list, items|
+    temp.push(list)
+  end
   end
   return temp
 end
